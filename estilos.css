@@ -1,10 +1,13 @@
 body {
 background: linear-gradient(to right, #000000, #4f0600);
+min-height: 1200px;
 }
 
+
 .caja {
-     display: list-item;
-     text-align: center;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
   }
 
 select {
@@ -90,15 +93,28 @@ margin-top: 30px;
   }
 }
 
-#Boton {
-  color: #e90303;
-  border-style: double;
-  font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 10%;
-background-attachment: fixed;
-background-color: #000000;
+.boton {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  margin-right: 10px;
 }
+
+button:hover{
+   background-color: #0bf317;
+    border-color: #0bf317;
+}
+
 @media (max-width: 500px) {
   select {
     min-width: 90%;
