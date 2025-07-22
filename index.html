@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PirateBay</title>
+    <script src="actions.js"></script>
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="actions.js"></script>
+    
   </head>
 <body>
 <div class="titulologo">
@@ -29,6 +30,15 @@
 </select>
 </div>
 
+  <div class="caja">
+    <select onchange="window.location.href=this.value;">
+<option value=>Anime 💀</option>
+  <option value="https://animefenix2.tv/">Animefenix2</option>
+
+</select>
+</div>
+
+
  <div class="caja">
     <select onchange="window.location.href=this.value;">
 <option value=>Peliculas 💀</option>
@@ -49,11 +59,19 @@
 </div>
 
 
-
-
 <button class="boton" onclick="toggleLike()">Like</button>
 <span id="like-count">0</span>
 <audio id="sonidoboton" src="ty.mp3"></audio>
 
+
+
+
+<div id="disclaimer" style="display: none;">
+  ⚠️ ⚠️ Este sitio es solo para fines informativos. <br>
+  No nos hacemos responsables por cualquier problema que pueda surgir al utilizarlo.  
+  Recomendamos usar el navegador <strong>Brave</strong>  <br>
+  para una mejor experiencia y mayor seguridad.
+  <button onclick="aceptarDisclaimer()">Aceptar</button>
+</div>
 </body>
 </html>
