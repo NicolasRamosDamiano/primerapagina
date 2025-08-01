@@ -65,7 +65,7 @@ margin-top: 30px;
 .titulologo span {
   opacity: 0;
   display: inline-block;
-  animation: animacion 2.0s forwards;
+  animation: animacion 3.0s forwards;
 }
 .titulo span:nth-child(1) { animation-delay: 1.2s; }
 .titulo span:nth-child(2) { animation-delay: 1.5s; }
@@ -152,4 +152,10 @@ margin-top: 30px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.fin {
+  margin-left: 91%;
+  font-size: 20px;
+
 }

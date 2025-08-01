@@ -1,9 +1,7 @@
 window.addEventListener("load", function () {
   const mayor = confirm("⚠️ ¿Sos mayor de edad? ⚠️");
 
-  if (mayor) {
-    alert("Bienvenido.");
-  } else {
+  if (!mayor) {
     alert("No podés ingresar.");
     window.location.href = "https://www.google.com";
   }
