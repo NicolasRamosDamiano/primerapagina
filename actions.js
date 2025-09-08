@@ -7,18 +7,6 @@ window.addEventListener("load", function () {
   }
 });
 
-let likes = 0;
-function toggleLike() {
-  likes++;
-  document.getElementById('like-count').textContent = likes;
-
-  const sonido = document.getElementById('sonidoboton');
-  sonido.currentTime = 0;
-  sonido.volume = 0.1;
-  sonido.play();
-  
-}
-
 let disclaimerMostrado = false;
 
 window.addEventListener("scroll", function () {
@@ -31,3 +19,21 @@ window.addEventListener("scroll", function () {
 function aceptarDisclaimer() {
   document.getElementById("disclaimer").style.display = "none";
 }
+
+fetch("paginas.json")
+  .then(res => res.json())
+  .then(paginas => {
+    const contenedor = document.getElementById("contenedor");
+    contenedor.innerHTML = "";
+    paginas.forEach(pagina => {
+      const div = document.createElement("div");
+      div.innerHTML = `
+        <h2>${pagina.nombre}</h2>
+        <p>Descripción: ${pagina.descripcion}</p>
+        <img src="${pagina.imagen}" alt="${pagina.nombre}" width="200">
+        <p><a href="${pagina.link}" target="_blank">Visitar</a></p>
+      `;
+      contenedor.appendChild(div);
+    });
+  })
+  .catch(err => console.error("Error al cargar JSON:", err));

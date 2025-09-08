@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pelota libre",
+        "descripcion": "futbol",
+        "imagen": "img/pelotalibre.png",
+        "link": "https://pelotalibrehd.com"
+    },
+     {
+        "id": 2,
+        "nombre": "Futbol para pobres",
+        "descripcion": "futbol",
+        "imagen": "img/futbolparapobres.png",
+        "link": "https://www.futbolparapobres.com"
+    }, 
+    {
+        "id": 3,
+        "nombre": "Tarjeta roja",
+        "descripcion": "futbol",
+        "imagen": "img/rojadirecta.png",
+        "link": "https://rojadirectahd.com"
+    }, 
+    {
+        "id": 4,
+        "nombre": "Proteína Whey",
+        "descripcion": "futbol",
+        "imagen": "img/proteina.jpg",
+        "link": ""
+    }, 
+    {
+        "id": 5,
+        "nombre": "gnula",
+        "descripcion": "pelis",
+        "imagen": "img/gnula.png",
+        "link": "https://gnulaseries.nu"
+    }, 
+    {
+        "id": 6,
+        "nombre": "no se ",
+        "descripcion": "anime",
+        "imagen": "img/proteina.jpg",
+        "link": ""
+    }, 
+    {
+        "id": 7,
+        "nombre": "anime fenix vip",
+        "descripcion": "anime",
+        "imagen": "img/proteina.jpg",
+        "link": "https://wvv.animefenix.vip/animes"
+    },
+     {
+        "id": 8,
+        "nombre": "9animetv",
+        "descripcion": "anime",
+        "imagen": "img/9anime.png",
+        "link": "https://9animetv.to/home"
+    } 
+]
