@@ -22,10 +22,10 @@
     }, 
     {
         "id": 4,
-        "nombre": "Proteína Whey",
-        "descripcion": "futbol",
+        "nombre": "pelispedia",
+        "descripcion": "pelis",
         "imagen": "img/proteina.jpg",
-        "link": ""
+        "link": "https://pelispedia.buzz/"
     }, 
     {
         "id": 5,
@@ -36,10 +36,10 @@
     }, 
     {
         "id": 6,
-        "nombre": "no se ",
-        "descripcion": "anime",
+        "nombre": "pelis en hd ",
+        "descripcion": "pelis",
         "imagen": "img/proteina.jpg",
-        "link": ""
+        "link": "https://pelisenhd.org/peliculas/"
     }, 
     {
         "id": 7,
@@ -50,9 +50,51 @@
     },
      {
         "id": 8,
-        "nombre": "9animetv",
+        "nombre": "zonaleros",
+        "descripcion": "pelis",
+        "imagen": "img/9anime.png",
+        "link": "https://www.zona-leros.com/peliculas-hd-online-lat"
+    }, 
+    {
+        "id": 9,
+        "nombre": "chefutbol",
+        "descripcion": "futbol",
+        "imagen": "img/9anime.png",
+        "link": "https://chefutbollibre.blogspot.com/"
+    } ,
+    {
+        "id": 10,
+        "nombre": "vixs",
+        "descripcion": "tv",
+        "imagen": "img/9anime.png",
+        "link": "https://vix.com/es-es/canales"
+    } ,
+    {
+        "id": 11,
+        "nombre": "latanime",
         "descripcion": "anime",
         "imagen": "img/9anime.png",
-        "link": "https://9animetv.to/home"
-    } 
+        "link": "https://latanime.org/"
+    }, 
+    {
+        "id": 12,
+        "nombre": "verpeliculas online",
+        "descripcion": "pelis",
+        "imagen": "img/9anime.png",
+        "link": "https://verpeliculasonline.org/?"
+    }, 
+    {
+        "id": 13,
+        "nombre": "tv mundial",
+        "descripcion": "tv",
+        "imagen": "img/9anime.png",
+        "link": "https://play.tdtchannels.com/television/"
+    },
+       {
+        "id": 14,
+        "nombre": "al angulotv",
+        "descripcion": "futbol",
+        "imagen": "img/9anime.png",
+        "link": "https://alangulo-tv.com/"
+         }
 ]

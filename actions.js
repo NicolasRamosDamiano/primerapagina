@@ -20,20 +20,43 @@ function aceptarDisclaimer() {
   document.getElementById("disclaimer").style.display = "none";
 }
 
+
+
+
+
+
+let paginasData = [];
+
 fetch("paginas.json")
   .then(res => res.json())
   .then(paginas => {
-    const contenedor = document.getElementById("contenedor");
-    contenedor.innerHTML = "";
-    paginas.forEach(pagina => {
-      const div = document.createElement("div");
-      div.innerHTML = `
-        <h2>${pagina.nombre}</h2>
-        <p>Descripción: ${pagina.descripcion}</p>
-        <img src="${pagina.imagen}" alt="${pagina.nombre}" width="200">
-        <p><a href="${pagina.link}" target="_blank">Visitar</a></p>
-      `;
-      contenedor.appendChild(div);
-    });
+    paginasData = paginas;
+    mostrar(paginasData);
   })
   .catch(err => console.error("Error al cargar JSON:", err));
+
+  
+function mostrar(lista) {
+  const contenedor = document.getElementById("contenedor");
+  contenedor.innerHTML = "";
+  lista.forEach(pagina => {
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <h2>${pagina.nombre}</h2>
+      <p>${pagina.descripcion}</p>
+      <img src="${pagina.imagen}" alt="${pagina.nombre}" width="200">
+      <p><a href="${pagina.link}" target="_blank">Visitar</a></p>
+    `;
+    contenedor.appendChild(div);
+  });
+}
+
+
+function filtrar(descripcion) {
+  if (descripcion === "todos") {
+    mostrar(paginasData);
+  } else {
+    const filtrados = paginasData.filter(p => p.descripcion === descripcion);
+    mostrar(filtrados);
+  }
+}
